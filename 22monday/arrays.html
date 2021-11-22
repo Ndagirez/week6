@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>arrays</title>
+    </head>
+    <body>
+        <p>Arrays are special variables that store more than one variable at a time</p>
+        <!--can be created using arry literal method or new-->
+        <!--new is discouraged because it slows down the running of code-->
+        <!--we access arrays using there indices-->
+        <!--a full array is accesed using a full array name-->
+         <!--arrays are objects and so array elements can be objects-->
+         <!--we can use for loop to loop array elements or the Array.forEach( ) function-->
+         <!--we can use the push () method to add elements to an array-->
+         <!--to check whether data given is of an array,we use Array.isArray () method which returns true-->
+         <h1>creating an array and accesing elements in it</h1>
+         <p id="one"></p>
+         <script>
+             var animals = ["cat","dog","cow","buffalo"];
+             document.getElementById("one").innerHTML = animals;
+         </script>
+         <h1>accessing the element using an indice</h1>
+         <p id = "two"></p>
+         <script>
+             var animals = ["cat","dog","cow","buffalo"];//length property gives length of an array
+             document.getElementById("two").innerHTML=
+             animals[2]+"<br>"+animals[animals.length -1]+"<br>"+animals[0];//accesses the first element,last ,and third
+
+         </script>
+
+         <!--looping arrays using for loop-->
+         <h1>elements of a mathematical set</h1>
+         <p id="three"></p>
+         <script>
+             var set,sLen,text,i;
+             set=["ruler","divider","compass","potractor"];
+             sLen=set.length;
+
+            text = "<ul>";
+            for (i = 0; i < sLen; i++) {
+            text += "<li>" + set[i] + "</li>";
+            }
+            text += "</ul>";
+            document.getElementById("three").innerHTML=text;
+         </script>
+
+         <!--adding elements to arrays-->
+         <h1>adding elements to arrays</h1>
+         <p id="four"></p>
+         <script>
+             var insects = ["termites","whiteants","grasshopers"];
+             insects.push("blackants");
+             document.getElementById("four").innerHTML=
+             insects;
+             
+         </script>
+
+
+    </body>
+</html>
