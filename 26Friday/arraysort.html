@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--sorting arrays-->
+<html>
+    <head>
+        <title>
+            sorting arrays
+        </title>
+    </head>
+    <body>
+        <p id ="one"></p>
+        <script>
+            var fruits = ["apple","berries","pineapple","mangoes"];
+            document.getElementById("one").innerHTML= fruits.sort();//sorts according to alphabetic letters
+        </script>
+        <p>reversing elements</p>
+        <h1 id="two"></h1>
+        <button type="button" onclick="myFunction()">click<button>
+
+        <script>
+            var names=["pat","cat","rat,","mat","sat"]
+            document.getElementById("two").innerHTML=names;
+
+            function myFunction(){
+                names.sort();//sorts
+                names.reverse();//reverses sorted elements from last to first
+            document.getElementById("two").innerHTML=names;
+    
+            }
+        </script>
+
+        <p>numeric sort</p>
+        <h1 id="three"></h1>
+        <button type="button" onclick="myMarks()">click</button>
+        <script>
+            var marks = [40,500,49,30,20];
+            document.getElementById("three").innerHTML=marks;
+
+            function myMarks(){
+                marks.sort(function(a,b){return(a-b)})
+                document.getElementById("three").innerHTML=marks;
+            }
+        </script>
+
+        <p>sortng randomly</p>
+        <h1 id="four"></h1>
+        <button  type="button" onclick="myMine()">click</button>
+        <script>
+            var mine = [54, 34,57,90];
+            document.getElementById("four").innerHTML= mine;
+            function myMine(){
+                mine.sort(function(a, b){return 0.5 - Math.random()});
+                document.getElementById("four").innerHTML = mine;
+            }
+        </script>
+
+        <p>using math.max() to get highest in an array</p>
+        <h1 id="five"></h1>
+        
+        <script>
+          var numbers = [45,87,60,76.456];
+          document.getElementById("five").innerHTML= numbers;
+         
+        document.getElementById("five").innerHTML = myArrayMax(numbers);
+
+        function myArrayMax(arr) {
+        return Math.max.apply(null, arr);
+        }
+          
+        </script>
+        
+        
+    </body>
+</html>

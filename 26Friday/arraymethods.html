@@ -1,0 +1,85 @@
+<DOCTYPE html>
+<!--array methods-->
+<html>
+    <head>
+        <title>arrays</title>
+    </head>
+    <body>
+        <p>changing array to strings</p>
+        <h1 id="one"></h1>
+        <script>
+            var car =["fuso","diana","canta"];
+            document.getElementById("one").innerHTML=car.toString();
+
+        </script>
+        <p>joining arrays</p>
+        <p id="two"></p>
+        <script>
+            var names=["mari","sara","jup0" ,"clif"]
+            var x= names.join();
+            document.getElementById("two").innerHTML= x;
+        </script>
+
+            
+        <p>removing item on array</p>
+        <h id="three"></h>
+        <script>
+            var names=["mari","sara","jup0" ,"clif"]
+            names.pop();
+            document.getElementById("three").innerHTML= names;
+
+        </script>
+        <p>adding item on array</p>
+        <h id="four"></h>
+        <script>
+            var names=["mari","sara","jup0" ,"clif"]
+            names.push("wendy");
+            document.getElementById("four").innerHTML= names;
+        </script>
+
+        <p>shift</p>
+        <h id="five"></h>
+        <script>
+            var names=["mari","sara","jup0" ,"clif"];
+            var sc=names.shift();
+            document.getElementById("five").innerHTML=sc;
+        </script>
+        <p>unshift</p>
+        <h1 id="six"></h>
+        <h1 id="seven"></h1>
+        <script>
+            var names=["mari","sara","jup0" ,"clif"];
+            var sc=names.unshift("kato");
+            document.getElementById("six").innerHTML=sc;
+            document.getElementById("seven").innerHTML=names;
+        </script>
+        <p>using length properfty to add elements</p>
+        <h1 id="eight"></h1>
+        <script>
+            var names=["mari","sara","jup0" ,"clif"];
+            names[names.length]="grace";document.getElementById("eight").innerHTML=names;
+
+        </script>
+
+        <p>delete operator</p>
+        <h id="nine"></h>
+        <script>
+            var names=["mari","sara","jup0" ,"clif"];
+            delete names[2];
+            document.getElementById("nine").innerHTML=names;
+        </script>
+       <p>splice</p>
+       <h id="nine"></h>
+       <script>
+           var names=["mari","sara","jup0" ,"clif"];
+           
+           document.getElementById("nine").innerHTML=names;
+       </script>
+
+
+
+
+
+
+    </body>
+</html>
